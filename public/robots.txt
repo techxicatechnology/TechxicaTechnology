@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+# Allow access to static resources
+Allow: /assets/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.ico$
+Allow: /*.webp$
+
+Sitemap: https://techxicatechnology.com/sitemap.xml
