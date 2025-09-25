@@ -8,39 +8,4 @@
     <changefreq>weekly</changefreq>
   </url>
 
-  <url>
-    <loc>https://techxicatechnology.com/careers</loc>
-    <lastmod>2025-09-23</lastmod>
-    <priority>0.8</priority>
-    <changefreq>weekly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://techxicatechnology.com/contact</loc>
-    <lastmod>2025-09-23</lastmod>
-    <priority>0.7</priority>
-    <changefreq>monthly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://techxicatechnology.com/privacy</loc>
-    <lastmod>2025-09-23</lastmod>
-    <priority>0.3</priority>
-    <changefreq>yearly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://techxicatechnology.com/terms</loc>
-    <lastmod>2025-09-23</lastmod>
-    <priority>0.3</priority>
-    <changefreq>yearly</changefreq>
-  </url>
-
-  <url>
-    <loc>https://techxicatechnology.com/cookies</loc>
-    <lastmod>2025-09-23</lastmod>
-    <priority>0.3</priority>
-    <changefreq>yearly</changefreq>
-  </url>
-
 </urlset>
