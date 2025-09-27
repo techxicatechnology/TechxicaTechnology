@@ -40,7 +40,7 @@
   max-width: 1450px; /* Aligned with About.css */
   margin: 0 auto;
   height: 100%;
-  padding: 0; /* Reduced from 0 2rem */
+  padding: 0 1.5rem; /* Added proper padding for logo spacing */
 }
 
 /* ===== HERO PAGE STYLES ===== */
@@ -88,29 +88,40 @@
 }
 
 /* ===== LOGO STYLES ===== */
+.cyber-logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .cyber-nav-logo {
   border-width: 1px;
   border-radius: 9px;
   background: linear-gradient(135deg, rgba(104, 13, 86, 0.818), rgb(41, 18, 125));
-  height: 40px; /* Adjust this value for default size */
+  height: 45px; /* Slightly increased for better visibility */
   width: auto; /* Maintains aspect ratio */
   transition: var(--transition);
   filter: brightness(1) drop-shadow(0 0 2px rgba(0, 247, 255, 0.3));
+  object-fit: contain; /* Ensures proper scaling */
 }
 
 /* Scrolled state */
 .cyber-nav.scrolled .cyber-nav-logo {
-  height: 40px; /* Slightly smaller when scrolled */
+  height: 42px; /* Slightly smaller when scrolled but still visible */
 }
 
 /* Mobile view */
 @media (max-width: 768px) {
+  .cyber-nav-container {
+    padding: 0 1rem; /* Reduced padding on mobile */
+  }
+  
   .cyber-nav-logo {
-    height: 36px; /* Slightly smaller on mobile */
+    height: 38px; /* Slightly smaller on mobile */
   }
   
   .cyber-nav.scrolled .cyber-nav-logo {
-    height: 34px;
+    height: 36px;
   }
 }
 
