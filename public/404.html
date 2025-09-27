@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techxica Technology - Page Not Found</title>
+  
+  <!-- SPA Redirect Script -->
+  <script>
+    // Store the requested URL
+    sessionStorage.setItem('redirect', location.href);
+  </script>
+  
+  <!-- Immediate redirect to index.html -->
+  <meta http-equiv="refresh" content="0;URL=/">
+  
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #ff474d 0%, #66d8ef, #698ef5);
+      color: white;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    
+    .container {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 20px rgba(255, 71, 77, 0.5);
+    }
+    
+    h1 {
+      color: #66d8ef;
+      margin-bottom: 1rem;
+    }
+    
+    p {
+      margin-bottom: 1.5rem;
+    }
+    
+    .redirect-message {
+      color: #ff474d;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Techxica Technology</h1>
+    <p>Redirecting you to the requested page...</p>
+    <p class="redirect-message">If you're not redirected automatically, <a href="/" style="color: #66d8ef;">click here</a>.</p>
+  </div>
+  
+  <!-- Padding to make file > 512 bytes for IE compatibility -->
+  <!--
+    This file serves as a fallback for single-page applications (SPAs) hosted on static servers.
+    When a user tries to access a direct URL like /about or /contact, the server returns this
+    404.html file, which then redirects to the main app and restores the requested route.
+    
+    For GitHub Pages, Netlify, and similar static hosts, this ensures that React Router
+    can handle the routing client-side after the initial redirect.
+    
+    The sessionStorage.redirect mechanism preserves the original URL so the main app
+    can navigate to the correct route after loading.
+  -->
+</body>
+</html>

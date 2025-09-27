@@ -21,6 +21,7 @@ import Cookies from './Pages/Cookies'
 import JobApplicationForm from './Components/JobApplicationForm/JobApplicationForm';
 import JobApplicationPrivacy from './Components/JobApplicationForm/JobApplicationPrivacy';
 import NotFound from './Pages/404';
+import AboutPage from './Pages/AboutPage';
 
 
 const Home = ({ setIsVideoPlaying }) => {
@@ -138,6 +139,7 @@ const App = () => {
             path="/" 
             element={<Home setIsVideoPlaying={setIsVideoPlaying} />} 
           />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/careers" element={<CareerPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/apply" element={<JobApplicationForm />} />
