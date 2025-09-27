@@ -184,7 +184,7 @@ const TechxicaFooter = () => {
           {/* Legal Section */}
           <div className="cyber-footer__legal">
             <p className="cyber-footer__copyright">
-              © {currentYear} TECHXICA TECHNOLOGY PVT. LTD. ALL RIGHTS RESERVED. |{' '}
+              © {currentYear} TECHXICA TECHNOLOGY ALL RIGHTS RESERVED. |{' '}
               <Link to="/privacy" className="cyber-footer__legal-link">Privacy Policy</Link>
               {' '}|{' '}
               <Link to="/terms" className="cyber-footer__legal-link">
